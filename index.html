@@ -1,0 +1,172 @@
+<style>
+    #page-header {
+      display: flex;
+      flex-direction: row;
+      font-family: "Motiva Sans", Sans-serif;
+      font-size: 14px;
+      font-weight: strong;
+      background-color: #171a21;
+      margin: auto;
+      width: auto;
+      height: 7em;
+    }
+    #header-logo {
+      height: auto;
+      width: 170px;
+      margin-left: 20%
+    }
+    #header-menu {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-column-gap: 10px;
+      align-items: center;
+    }
+    #menu-item {
+      color: #b8b6b4;
+      text-decoration: none;
+    }
+    #menu-item:hover {
+      color: white;
+    }
+    #login-bar {
+      margin-left: 10%;
+      margin-right: auto;
+      display: grid;
+      grid-template-columns: 200px auto auto;
+    }
+    #install-btn {
+      display: flex;
+      flex-direction: row;
+      margin-left: 10%;
+      margin-top: 5px;
+      width: 120px;
+      height: 20px;
+      background-color: #5c7e10;
+      color: white;
+      text-decoration: none;
+    }
+    #install-img {
+      margin-left: 5%;
+      justify-self: left;
+      align-self: center;
+      height: 10px;
+      width: auto;
+    }
+    #install-txt {
+      margin-left: 5%;
+      text-decoration: none;
+      color: #b8b6b4;
+      align-self: center;
+    }
+    #install-txt:hover {
+      color: white;
+    }
+    #valheim-div {
+      display: flex;
+      background-color: black;
+    }
+    #valheim-img {
+      max-width: 100%;
+      margin: auto;
+    }
+    #main-page-body {
+      background-color: #203557;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr 5fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "sidebar content"
+        "sidebar content";
+      font-family: "Motiva Sans", Helvetica;
+    }
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      grid-area: sidebar;
+      margin-left: 20px;
+    }
+    .sidebar-title {
+      color: #c6d4df;
+    }
+    .sidebar-item {
+      color: #699bc2;
+    }
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10%;
+      grid-area: content;
+    }
+    #main-content-img {
+      height: 350px;
+      width: 600px;
+    }
+    .main-heading {
+      font-family: "Motiva Sans", Helvetica;
+      color: white;
+    }
+  </style>
+  
+  <html>
+    <main id="main">
+      <div id="page-header"> <!--Black page header-->
+        <img src="https://store.akamai.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016%22" id="header-logo">
+        <div id="header-menu">
+          <a href="" id="menu-item">STORE</a>
+          <a href="" id="menu-item">COMMUNITY</a>
+          <a href="" id="menu-item">ABOUT</a>
+          <a href="" id="menu-item">SUPPORT</a>
+        </div>
+        <div id="login-bar">
+          <div id="install-btn">
+            <img src="https://store.akamai.steamstatic.com/public/shared/images/header/btn_header_installsteam_download.png?v=1" id="install-img">
+            <a href="" id="install-txt">Install Steam</a>
+          </div>
+        <p id="menu-item">Login | </p>
+        <p id="menu-item">Language</p>
+        </div>
+      </div>
+      
+      <div id="valheim-div">
+        <img id="valheim-img" src="https://cdn.akamai.steamstatic.com/steam/clusters/frontpage/956ab2988811b18c62dd04a3/page_bg_english.jpg?t=1613407410">
+      </div>
+      
+      <div id="main-page-body">
+        <div class="sidebar">
+          <p class="sidebar-title">GIFT CARDS</p>
+          <div class="sidebar-item">
+            <p>Now Available on Steam</p>
+          </div>
+          <p class="sidebar-title">RECOMMENDED</p>
+          <div class="sidebar-item">
+            <p>By Friends</p>
+            <p>By Curators</p>
+            <p>Tags</p>
+          </div>
+          <p class="sidebar-title">DISCOVERY QUEUES</p>
+          <div class="sidebar-item">
+            <p>Recommendations</p>
+            <p>New Releases</p>
+          </div>
+          <p class="sidebar-title">BROWSE CATEGORIES</p>
+          <div class="sidebar-item">
+            <p>Top Sellers</p>
+            <p>New Releases</p>
+            <p>Upcoming</p>
+            <p>Specials</p>
+            <p>Virtual Reality</p>
+            <p>Controller Friendly</p>
+          </div>
+        </div>
+        
+        <div class="main-content">
+          <p class="main-heading">FEATURED & RECOMMENDED</p>
+          <img id="main-content-img" src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/35685771/76384ba6f9deb3580c5eeb199b5babc15c4642ab.jpg">
+        </div>
+      </div>
+      
+    </main>
+      
+</html>
