@@ -2,6 +2,7 @@ This is (an extremely rough replica of) the Steam Store webpage that is
 accessible at http://store.steampowered.com/
 
 In this project, I:
+	
 	- Applied CSS to elements on a page in different ways (class, id, inline)
 
 	- Used CSS Flowbox and grids to organize different elements on the webpage
